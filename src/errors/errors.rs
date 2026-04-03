@@ -17,6 +17,9 @@ pub enum ChronosError {
 
     #[error("registry error: {0}")]
     RegistryError(String),
+
+    #[error("io error: {0}")]
+    IoError(String),
 }
 
 /// result type alias
